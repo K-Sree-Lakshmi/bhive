@@ -6,7 +6,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import colors from "../../styles/colors";
 import { benefitCards } from "../../constants/stringConstants";
 import globalStyles from "../../styles/globalStyles";
-
 interface StaticCardProps {
   image: string;
   text: string;
@@ -22,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.3px",
     color: colors.black,
     [theme.breakpoints.down("sm")]: {
-      fontWeight: 600,
       fontSize: "24px",
     },
   },
@@ -45,6 +43,8 @@ const useStyles = makeStyles((theme) => ({
     height: "80px",
     border: `1px solid ${colors.lightGray}`,
     padding: "1rem",
+    cursor: "pointer",
+    transition: "background-color 0.3s, transform 0.3s",
     [theme.breakpoints.down("sm")]: {
       flex: "1 1 calc(50% - 16px)", // 2 cards per row on small screens
       flexDirection: "column",
@@ -76,7 +76,7 @@ const StaticCard = () => {
 
   return (
     <div>
-      <Typography variant="h3" align="center" className={globalClasses.flexRow}>
+      <Typography className={globalClasses.margin2remTopBottom}>
         <span className={classes.typographyText}>Why Choose us?</span>
       </Typography>
       <div className={classes.cardContainer}>

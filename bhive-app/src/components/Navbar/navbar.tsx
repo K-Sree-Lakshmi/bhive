@@ -9,9 +9,13 @@ import colors from "../../styles/colors";
 
 const useStyles = makeStyles({
   appBar: {
-    position:"static",
-    margin: "1rem 3rem",
-    border: "1px solid #FFFFFF",
+    position: "fixed", // Change to fixed
+    top: 0, // Stick to the top
+    width: "100%", // Full width to stretch across the screen
+    zIndex: 1000, // Ensure it's above other elements
+    margin: "0", // Remove margin to avoid offsetting the fixed position
+    backgroundColor: "#FFF", // Optional: Set a background color for the navbar
+    borderBottom: "1px solid #FFFFFF",
   },
   callIcon: {
     color: colors.yellow,

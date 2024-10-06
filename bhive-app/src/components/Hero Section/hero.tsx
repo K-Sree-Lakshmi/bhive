@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: "left, right",
     backgroundRepeat: "no-repeat",
     position: "relative",
+    marginTop: "80px", // Adjusting content margin to not overlap with the fixed navbar
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column", // Stack content vertically on small screens
       height: "auto", // Allow height to adjust
@@ -36,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
     [theme.breakpoints.down("sm")]: {
       justifyContent: "center", // Keep image in center
-      margin: "5rem 0", // margin for mobile view (to modify)
+      margin: "1rem 0",
     },
   },
   overlayImage: {
@@ -85,7 +86,7 @@ const Hero = () => {
     <Box className={classes.container}>
       {/* Left content with overlay text */}
       <Box className={classes.leftContent}>
-        <Typography variant="h3" align="center" className={classes.textLayout}>
+        <Typography align="center" className={classes.textLayout}>
           <span className={classes.typographyText}>
             Host your meetings with world-class amenities. Starting at{" "}
           </span>
