@@ -10,3 +10,4 @@ Steps to run the application-
 7. Open the browser in localhost:3000
 
 Integrated json data provided in the assignment github link and made the styles repsonsive.
+Can navigate to the provided google maps link on click of the distance icon in the card.
