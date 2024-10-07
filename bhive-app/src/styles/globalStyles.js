@@ -1,6 +1,6 @@
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
-const globalStyles = makeStyles((theme) => ({
+const globalStyles = makeStyles(() => ({
   flexRow: {
     display: "flex",
   },

@@ -1,7 +1,7 @@
 import React from "react";
 import { IconButton, Toolbar } from "@mui/material";
 import CallIcon from "@mui/icons-material/Call";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 import logo from "../../assets/logo.jpg";
 import globalStyles from "../../styles/globalStyles";
