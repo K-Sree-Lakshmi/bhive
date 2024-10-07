@@ -1,3 +1,4 @@
+// colors mentioned in the figma
 const colors = {
   yellow: "#F2B304",
   black: "#263238",
@@ -7,6 +8,7 @@ const colors = {
   yellowCard: "#FFCF4B",
   lightGrayText: "#65624C",
   lightestGray: "#FFFDF7"
+
 };
 
 export default colors;
