@@ -8,3 +8,5 @@ Steps to run the application-
 5. Install the dependencies - npm i
 6. Run the application using - npm start
 7. Open the browser in localhost:3000
+
+Integrated json data provided in the assignment github link and made the styles repsonsive.
