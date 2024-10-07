@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     borderBottom: "1px solid #FFFFFF",
   },
   callIcon: {
-    color: colors.yellow,
+    color: colors.Goldenrod,
   },
 });
 
@@ -34,7 +34,7 @@ const Navbar = () => {
           edge="end"
           aria-label="call"
           sx={{
-            border: `1px solid ${colors.yellow}`,
+            border: `1px solid ${colors.Goldenrod}`,
             borderRadius: "5px",
             boxShadow: "4px 4px 14px 0px #0000000F",
           }}

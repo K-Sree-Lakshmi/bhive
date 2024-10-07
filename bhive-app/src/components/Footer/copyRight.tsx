@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#222E34",
-    color: colors.footerText,
+    color: colors.LightSilver,
     height: "44px",
   },
 }));

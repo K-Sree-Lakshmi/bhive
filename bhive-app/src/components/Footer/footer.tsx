@@ -10,28 +10,28 @@ import googleStore from "../../assets/googleStore.jpg";
 import globalStyles from "../../styles/globalStyles";
 
 const useStyles = makeStyles((theme) => ({
-  typographyText: {
+  footerTypographyText: {
     fontFamily: "Inter, sans-serif",
     fontSize: "36px",
     fontWeight: 700,
     lineHeight: "28px",
-    color: colors.footerGray,
+    color: colors.DarkGray,
     [theme.breakpoints.down("sm")]: {
       fontSize: "24px",
       lineHeight: "45px",
-      color: colors.black,
+      color: colors.Charcoal,
       letterSpacing: "0.3px",
     },
   },
   footerLogo: {
     zIndex: 1,
   },
-  footerText: {
+  footerTextStyle: {
     fontFamily: "Inter, sans-serif",
     fontSize: "20px",
     fontWeight: 500,
     lineHeight: "28px",
-    color: colors.footerGray,
+    color: colors.DarkGray,
     [theme.breakpoints.down("sm")]: {
       display: "none", // Hide paragraph in mobile view
     },
@@ -67,14 +67,14 @@ const Footer = () => {
   return (
     <div>
       <Typography className={globalClasses.margin2remTopBottom}>
-        <span className={classes.typographyText}>Download our app now</span>
+        <span className={classes.footerTypographyText}>Download our app now</span>
       </Typography>
       <div className={classes.footerContainer}>
         <img src={mobileDownload} alt="download" />
         <div
           className={`${globalClasses.justifyCenter} ${globalClasses.flexColumn} ${classes.footerContent}`}
         >
-          <p className={classes.footerText}>
+          <p className={classes.footerTextStyle}>
             Boost your productivity with the BHIVE Workspace app. Elevate your
             workspace, collaborate efficiently, and unlock exclusive perks.
           </p>

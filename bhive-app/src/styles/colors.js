@@ -1,13 +1,13 @@
 // colors mentioned in the figma
 const colors = {
-  yellow: "#F2B304",
-  black: "#263238",
-  lightGray: "#F9F9F9",
-  footerGray: "#605F5F",
-  footerText: "#DDDDDD",
-  yellowCard: "#FFCF4B",
-  lightGrayText: "#65624C",
-  lightestGray: "#FFFDF7"
+  Goldenrod: "#F2B304",
+  Charcoal: "#263238",
+  WhiteSmoke: "#F9F9F9",
+  DarkGray: "#605F5F",
+  LightSilver: "#DDDDDD",
+  MustardYellow: "#FFCF4B",
+  Taupe: "#65624C",
+  Ivory: "#FFFDF7"
 
 };
 

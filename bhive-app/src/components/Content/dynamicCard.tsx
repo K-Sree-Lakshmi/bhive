@@ -59,18 +59,18 @@ interface DynamicCardProps {
 }
 
 const useStyles = makeStyles((theme:any) => ({
-  typographyText: {
+  dynamicCardTypographyText: {
     fontFamily: "Inter, sans-serif",
     fontSize: "36px",
     fontWeight: 700,
     lineHeight: "45px",
     letterSpacing: "0.3px",
-    color: colors.black,
+    color: colors.Charcoal,
     [theme.breakpoints.down("sm")]: {
       fontSize: "24px",
     },
   },
-  card: {
+  dynamicCard: {
     maxWidth: 345,
     margin: theme.spacing(2),
     flex: "1 0 30%",
@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme:any) => ({
     marginBottom: theme.spacing(1),
     height:"48px",
   },
-  image: {
+  dynamicCardImage: {
     width: "100%",
     height: "200px",
   },
@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme:any) => ({
     padding: "16px",
     border: "none",
     borderRadius: "8px",
-    backgroundColor: `${colors.lightGray} !important`,
+    backgroundColor: `${colors.WhiteSmoke} !important`,
     cursor: "pointer",
     outline: "none",
     transition: "background-color 0.3s, transform 0.3s",
@@ -121,7 +121,7 @@ const useStyles = makeStyles((theme:any) => ({
     padding: "16px",
     border: "none",
     borderRadius: "8px",
-    backgroundColor: `${colors.yellowCard} !important`,
+    backgroundColor: `${colors.MustardYellow} !important`,
     cursor: "pointer",
     outline: "none",
     transition: "background-color 0.3s, transform 0.3s",
@@ -139,7 +139,7 @@ const useStyles = makeStyles((theme:any) => ({
   },
   arrowIcon: {
     transition: "transform 0.3s",
-    color: colors.black,
+    color: colors.Charcoal,
     "&:hover": {
       transform: "translateX(5px)",
     },
@@ -152,28 +152,28 @@ const useStyles = makeStyles((theme:any) => ({
     fontSize: "14px",
     fontWeight: 700,
     lineHeight: "16.94px",
-    color: colors.lightGrayText,
+    color: colors.Taupe,
   },
   dayPassSpanText: {
     fontFamily: "Inter, sans-serif",
     fontSize: "12px",
     fontWeight: 500,
     lineHeight: "14.52px",
-    color: colors.black,
+    color: colors.Charcoal,
   },
   dayPassCost: {
     fontFamily: "Inter, sans-serif",
     fontSize: "20px",
     fontWeight: 600,
     lineHeight: "24.2px",
-    color: colors.black,
+    color: colors.Charcoal,
   },
   rectangularBox: {
     position: "absolute",
     top: "-20px",  // Place the box at the top of the button
     left: "50%",
     transform: "translateX(-50%)",  // Center the box horizontally
-    backgroundColor: colors.black,
+    backgroundColor: colors.Charcoal,
     borderRadius: "3px",
     fontWeight: "bold",
   },
@@ -182,7 +182,7 @@ const useStyles = makeStyles((theme:any) => ({
     fontSize: "8px",
     fontWeight: 500,
     lineHeight: "9.68px",
-    color: colors.lightestGray,
+    color: colors.Ivory,
     padding: "3px 6px"
   },
   titleName:{
@@ -190,7 +190,7 @@ const useStyles = makeStyles((theme:any) => ({
     fontSize: "20px",
     fontWeight: 600,
     lineHeight: "24.2px",
-    color: colors.black,
+    color: colors.Charcoal,
   }
 }));
 
@@ -210,12 +210,12 @@ const DynamicOverViewCard = (props: any) => {
   return (
     <div className={globalClasses.margin2remTopBottom}>
       <Typography>
-        <span className={classes.typographyText}>Our Space Overview</span>
+        <span className={classes.dynamicCardTypographyText}>Our Space Overview</span>
         <Box className={classes.container}>
           {props.spaceOverViewList.length &&
             props.spaceOverViewList?.map((item: DynamicCardProps) => {
               return (
-                <Card className={classes.card} key={item.id}>
+                <Card className={classes.dynamicCard} key={item.id}>
                   <CardContent>
                     <div className={classes.titleRow}>
                       <Typography className={classes.titleName}>{item.name}</Typography>
@@ -229,7 +229,7 @@ const DynamicOverViewCard = (props: any) => {
                     <img
                       src={item.images}
                       alt="Placeholder"
-                      className={classes.image}
+                      className={classes.dynamicCardImage}
                     />
                   </CardContent>
                   <CardActions className={globalClasses.justifyCenter}>

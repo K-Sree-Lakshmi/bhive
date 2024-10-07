@@ -13,13 +13,13 @@ interface StaticCardProps {
 }
 
 const useStyles = makeStyles((theme) => ({
-  typographyText: {
+  staticCardTypographyText: {
     fontFamily: "Inter, sans-serif",
     fontSize: "36px",
     fontWeight: 700,
     lineHeight: "45px",
     letterSpacing: "0.3px",
-    color: colors.black,
+    color: colors.Charcoal,
     [theme.breakpoints.down("sm")]: {
       fontSize: "24px",
     },
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: "center", // Optional: center cards on smaller screens
     },
   },
-  card: {
+  staticCard: {
     display: "flex",
     flex: "1 1 calc(25% - 16px)", // 4 cards per row on large screens
     alignItems: "center",
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     boxSizing: "border-box",
     width: "300px",
     height: "80px",
-    border: `1px solid ${colors.lightGray}`,
+    border: `1px solid ${colors.WhiteSmoke}`,
     padding: "1rem",
     cursor: "pointer",
     transition: "background-color 0.3s, transform 0.3s",
@@ -58,15 +58,11 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 500,
     lineHeight: "45px",
     letterSpacing: "21.78px",
-    color: colors.black,
+    color: colors.Charcoal,
     [theme.breakpoints.down("sm")]: {
       fontSize: "14px",
       letterSpacing: "16.94px",
     },
-  },
-  cardImage: {
-    width: "28px",
-    height: "28px",
   },
 }));
 
@@ -77,11 +73,11 @@ const StaticCard = () => {
   return (
     <div>
       <Typography className={globalClasses.margin2remTopBottom}>
-        <span className={classes.typographyText}>Why Choose us?</span>
+        <span className={classes.staticCardTypographyText}>Why Choose us?</span>
       </Typography>
       <div className={classes.cardContainer}>
         {benefitCards.map((item: StaticCardProps) => (
-          <div className={classes.card} key={item.key}>
+          <div className={classes.staticCard} key={item.key}>
             <img src={item.image} alt="Card" />
             <Typography className={classes.cardTitle}>{item.text}</Typography>
           </div>

@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import colors from "../../styles/colors";
 
 const useStyles = makeStyles((theme) => ({
-  container: {
+  heroContainer: {
     display: "flex",
     width: "100%",
     height: "400px",
@@ -59,14 +59,14 @@ const useStyles = makeStyles((theme) => ({
       left: "19px",
     },
   },
-  typographyText: {
+  heroTypographyText: {
     fontFamily: "Inter, sans-serif",
     fontSize: "58px",
     fontWeight: 700,
     lineHeight: "70.19px",
     letterSpacing: "-1px",
     textAlign: "left",
-    color: colors.black,
+    color: colors.Charcoal,
     [theme.breakpoints.down("sm")]: {
       fontWeight: 600,
       fontSize: "20px", 
@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   priceText: {
-    color: colors.yellow,
+    color: colors.Goldenrod,
   },
 }));
 
@@ -83,14 +83,14 @@ const Hero = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.container}>
+    <Box className={classes.heroContainer}>
       {/* Left content with overlay text */}
       <Box className={classes.leftContent}>
         <Typography align="center" className={classes.textLayout}>
-          <span className={classes.typographyText}>
+          <span className={classes.heroTypographyText}>
             Host your meetings with world-class amenities. Starting at{" "}
           </span>
-          <span className={`${classes.typographyText} ${classes.priceText}`}>
+          <span className={`${classes.heroTypographyText} ${classes.priceText}`}>
             ₹199/-!
           </span>
         </Typography>
